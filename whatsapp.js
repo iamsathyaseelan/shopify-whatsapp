@@ -64,9 +64,7 @@ let whatsappChat = function () {
         `);
         return whatsappChat;
     }
-    document.addEventListener('DOMContentLoaded', (event) => {
-        initChat();
-    });
+    return initChat();
 }
 
 window.whatsappChat = whatsappChat();
