@@ -66,5 +66,5 @@ function whatsappChat() {
     }
     return initChat();
 }
-alert();
+
 window.whatsappChat = whatsappChat();
