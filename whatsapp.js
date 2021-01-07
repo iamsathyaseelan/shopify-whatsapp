@@ -1,3 +1,4 @@
+"use strict";
 function whatsappChat() {
     let isMobile = function () {
         let check = false;
@@ -56,7 +57,7 @@ function whatsappChat() {
         position:fixed;
         z-index:9999999;
         cursor:pointer;
-        }#whatsapp-chat-widget-icon svg{fill:#22cd5b}
+        }#whatsapp-chat-widget-icon svg{fill:#22cd5b;background: white;border-radius: 50%;}
         #whatsapp-chat-widget-container.bottomLeft{bottom:20px;left:20px;}
         #whatsapp-chat-widget-container.bottomRight{bottom:20px;right:20px;}
         #whatsapp-chat-widget-container.centeredRight{bottom:48%;right:20px;}
@@ -64,7 +65,8 @@ function whatsappChat() {
         `);
         return whatsappChat;
     }
+    document.addEventListener('DOMContentLoaded', (event) => {
+    });
     return initChat();
 }
-
 window.whatsappChat = whatsappChat();
