@@ -1,4 +1,4 @@
-let whatsappChat = function () {
+function whatsappChat() {
     let isMobile = function () {
         let check = false;
         (function (a) {
@@ -66,5 +66,5 @@ let whatsappChat = function () {
     }
     return initChat();
 }
-
+alert();
 window.whatsappChat = whatsappChat();
