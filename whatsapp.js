@@ -44,6 +44,12 @@ function whatsappChat() {
             className += ' hasText';
             iconText += `<div class="iconText"><p>${label}</p></div>`;
         }
+        if(position === "centeredRight"){
+            className += ' verticalWritingRight';
+        }
+        if(position === "centeredLeft"){
+            className += ' verticalWritingLeft';
+        }
         let chat = generateChatIcon(iconText);
         chat.setAttribute('class', className);
         let link = `https://web.whatsapp.com/send`;
@@ -69,6 +75,8 @@ function whatsappChat() {
         #whatsapp-chat-widget-container.hasText{background-color:#22cd5b;display:flex;border-radius:5px}
         #whatsapp-chat-widget-container .iconText p{color:#ffffff;margin: 10px 10px 10px 0;}
         #whatsapp-chat-widget-container.hasText svg{width: 30px;height: 30px;margin: 8px;}
+        #whatsapp-chat-widget-container.verticalWritingRight{writing-mode: vertical-rl;right:0}
+        #whatsapp-chat-widget-container.verticalWritingLeft{writing-mode: vertical-rl;left:0}
         `);
         return whatsappChat;
     }
